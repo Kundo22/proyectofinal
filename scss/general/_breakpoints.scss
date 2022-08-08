@@ -1,49 +1,46 @@
  /* Full responsive */
+
+
+ @media (max-width: 1024px) {
+    
  
- @media (min-width: 1024px) {
     header{
-        flex-direction: column;
-    }
-
-    .nav {
-        padding: 10px 0px;
-    }
-
-    .cuepo-card {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .videos{
-        grid-template-columns: repeat(2, 1fr);
-    }
-
- }
-
-
- @media (max-width: 700px) {
-
-    .cuepo-card {
-        grid-template-columns: repeat (1, 1fr);
-    }
-
-    .grid > article {
-        text-align: center;
-    }
-
-    .videos{
-        justify-content: center;
-        margin: 20px;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto auto auto;
-        row-gap: 20px;
-    }
- }
-
-
- @media screen and (min-width: 1024px) {
-    .cuerpo-card{
-        grid-template-columns: repeat(4,1fr );
-    }
-  
+      flex-direction: column;
   }
-  
+
+  .nav{
+      padding: 10px 0px;
+  }
+  .cuerpo-card{
+      grid-template-columns: repeat(2,1fr);
+  }
+
+  .videos{
+   grid-template-columns: repeat(2,1fr);
+}
+
+@media (max-width: 700px) {
+  .cuerpo-card{
+      grid-template-columns: repeat(1,1fr);
+  }
+
+  .grid > article{
+      text-align: center;
+  }
+     
+  .videos{
+    justify-content: center;
+    margin: 20px;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    row-gap: 20px;
+}
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .cuerpo-card{
+      grid-template-columns: repeat(4,1fr );
+  }
+
+}

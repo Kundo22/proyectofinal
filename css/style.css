@@ -133,23 +133,23 @@ main .portafolio .galeria .fotos img:hover {
 }
 
 /* Full responsive */
-@media (min-width: 1024px) {
+@media (max-width: 1024px) {
   header {
     flex-direction: column;
   }
   .nav {
     padding: 10px 0px;
   }
-  .cuepo-card {
+  .cuerpo-card {
     grid-template-columns: repeat(2, 1fr);
   }
   .videos {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-@media (max-width: 700px) {
-  .cuepo-card {
-    grid-template-columns: repeat 1, 1fr;
+@media (max-width: 1024px) and (max-width: 700px) {
+  .cuerpo-card {
+    grid-template-columns: repeat(1, 1fr);
   }
   .grid > article {
     text-align: center;
