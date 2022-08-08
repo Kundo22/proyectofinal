@@ -133,15 +133,26 @@ main .portafolio .galeria .fotos img:hover {
 }
 
 /* Full responsive */
-@media screen and (min-width: 480px) {
+@media (min-width: 1024px) {
   header {
     flex-direction: column;
   }
   .nav {
     padding: 10px 0px;
   }
-  .cuerpo-card {
-    grid-template-columns: repeat(1, 1fr);
+  .cuepo-card {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .videos {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 700px) {
+  .cuepo-card {
+    grid-template-columns: repeat 1, 1fr;
+  }
+  .grid > article {
+    text-align: center;
   }
   .videos {
     justify-content: center;
@@ -151,23 +162,9 @@ main .portafolio .galeria .fotos img:hover {
     row-gap: 20px;
   }
 }
-@media screen and (min-width: 768px) {
-  .cuerpo-card {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .grid > article {
-    text-align: center;
-  }
-  .videos {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
 @media screen and (min-width: 1024px) {
   .cuerpo-card {
     grid-template-columns: repeat(4, 1fr);
-  }
-  .videos {
-    grid-template-columns: repeat(3, 1fr);
   }
 }
 /* NAV */
